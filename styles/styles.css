@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400&display=swap");
+@media (max-width: 375px) {
+  body {
+    background: url("/images/bg-mobile.svg");
+    background-color: #674baf;
+    background-repeat: no-repeat;
+  }
+  body .logo {
+    margin: 25px;
+  }
+  body .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .main .main-text .main-text-headings {
+    font-size: 100%;
+  }
+  body .main .main-text .main-text-description {
+    font-size: 50%;
+  }
+}
+
+/*
+    
+*/
+@media (min-width: 375px) {
+  body {
+    background: url("/images/bg-desktop.svg");
+    background-color: #674baf;
+    background-repeat: no-repeat;
+  }
+  body .logo {
+    margin: 50px;
+  }
+  body .main .main-text .main-text-headings {
+    font-size: 170%;
+  }
+  body .main .main-text .main-text-description {
+    font-size: 80%;
+  }
+}
+
+body .logo {
+  position: relative;
+  content: url("/images/logo.svg");
+  max-width: 30%;
+}
+
+body .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin: 5%;
+}
+
+body .main .main-mockup {
+  content: url("/images/illustration-mockups.svg");
+}
+
+body .main .main-text {
+  position: relative;
+  font-family: "Outfit", sans-serif;
+  color: white;
+  margin-left: 7%;
+}
+
+body .main .main-text .main-text-headings {
+  text-align: center;
+  font-weight: 500;
+  margin: 7px;
+  margin-top: 10%;
+}
+
+body .main .main-text .main-text-description {
+  position: relative;
+  font-weight: 400;
+  margin: 5%;
+}
+
+body .main .main-text .main-text-button {
+  text-align: center;
+  font-weight: 400;
+  margin: 5%;
+  margin-top: 12%;
+}
+
+body .main .main-text .main-text-button a {
+  position: relative;
+  border: none;
+  background-color: white;
+  color: #674baf;
+  padding: 3% 30%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 80%;
+  border-radius: 30px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=styles.css.map */

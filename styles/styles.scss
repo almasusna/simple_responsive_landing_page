@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400&display=swap");
+
+$font-family-headings: "Outfit", sans-serif;
+$font-family-body: "Outfit", sans-serif;
+$violet: hsl(257, 40%, 49%);
+$soft-magenta: hsl(300, 69%, 71%);
+
+@media (max-width: 375px) {
+  body {
+    background: url("/images/bg-mobile.svg");
+    background-color: $violet;
+    background-repeat: no-repeat;
+    .logo {
+      margin: 25px;
+    }
+    .main {
+      flex-direction: column;
+      .main-text {
+        .main-text-headings {
+          font-size: 100%;
+        }
+        .main-text-description {
+          font-size: 50%;
+        }
+      }
+    }
+  }
+}
+/*
+    
+*/
+@media (min-width: 375px) {
+  body {
+    background: url("/images/bg-desktop.svg");
+    background-color: $violet;
+    background-repeat: no-repeat;
+    .logo {
+      margin: 50px;
+    }
+    .main {
+      .main-text {
+        .main-text-headings {
+          font-size: 170%;
+        }
+        .main-text-description {
+          font-size: 80%;
+        }
+      }
+    }
+  }
+}
+
+body {
+  .logo {
+    position: relative;
+    content: url("/images/logo.svg");
+    max-width: 30%;
+  }
+  .main {
+    display: flex;
+    position: relative;
+    margin: 5%;
+    .main-mockup {
+      content: url("/images/illustration-mockups.svg");
+    }
+    .main-text {
+      position: relative;
+      font-family: $font-family-headings;
+      color: white;
+      margin-left: 7%;
+
+      .main-text-headings {
+        text-align: center;
+        font-weight: 500;
+        margin: 7px;
+        margin-top: 10%;
+      }
+      .main-text-description {
+        position: relative;
+        font-weight: 400;
+        margin: 5%;
+      }
+      .main-text-button {
+        text-align: center;
+        font-weight: 400;
+        margin: 5%;
+        margin-top: 12%;
+
+        a {
+          position: relative;
+          border: none;
+          background-color: white;
+          color: $violet;
+          padding: 3% 30%;
+          text-align: center;
+          text-decoration: none;
+          font-size: 80%;
+          border-radius: 30px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
